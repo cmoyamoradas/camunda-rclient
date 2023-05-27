@@ -18,7 +18,6 @@ public class CamundaClientApplication {
     public static void main(String[] args) {
 
         WebClient.Builder webClientBuilder = WebClient.builder();
-        webClientBuilder.baseUrl(System.getProperty("baseUrl"));
 
         UserService userService = new UserServiceImpl(webClientBuilder);
 
